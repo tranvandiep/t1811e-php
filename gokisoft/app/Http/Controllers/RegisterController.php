@@ -16,5 +16,7 @@ class RegisterController extends Controller {
 		$password = $request->password;
 
 		echo $fullname;
+		//dung du lieu vs muc dich j cung dc
+		
 	}
 }
