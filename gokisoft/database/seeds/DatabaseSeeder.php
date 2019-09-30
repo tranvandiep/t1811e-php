@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder {
 	/**
@@ -13,14 +12,26 @@ class DatabaseSeeder extends Seeder {
 		// $this->call(UsersTableSeeder::class);
 		$currentTime = date('Y-m-d H:i:s');
 
-		DB::table('students')->insert([
-				'rollno'     => '20060780',
-				'fullname'   => 'TRAN VAN DIEP',
-				'email'      => 'tranvandiep.it@gmail.com',
-				'address'    => 'Nam Dinh',
-				'age'        => 32,
-				'created_at' => $currentTime,
-				'updated_at' => $currentTime
-			]);
+		// DB::table('students')->insert([
+		// 		'rollno'     => '20060780',
+		// 		'fullname'   => 'TRAN VAN DIEP',
+		// 		'email'      => 'tranvandiep.it@gmail.com',
+		// 		'address'    => 'Nam Dinh',
+		// 		'age'        => 32,
+		// 		'created_at' => $currentTime,
+		// 		'updated_at' => $currentTime
+		// 	]);
+
+		// DB::table('class_room')->insert([
+		// 		'class_name' => 'T1811E',
+		// 		'created_at' => $currentTime,
+		// 		'updated_at' => $currentTime
+		// 	]);
+
+		// DB::table('class_room')->insert([
+		// 		'class_name' => 'T1908M',
+		// 		'created_at' => $currentTime,
+		// 		'updated_at' => $currentTime
+		// 	]);
 	}
 }
