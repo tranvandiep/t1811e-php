@@ -17,6 +17,8 @@ Route::group(['prefix' => '/admin/student'], function () {
 
 		Route::post('/post', 'AdminStudentController@addStudent')->name('postStudent');
 
+		Route::get('/search-email', 'AdminStudentController@searchEmail')->name('searching_by_email');
+
 		Route::get('/list', 'AdminStudentController@showAll')->name('showAll');
 
 		Route::post('/delete', 'AdminStudentController@deleteStudent')->name('deleteStudent');
